@@ -1,4 +1,6 @@
 package com.paulo.teixeira.robint.ui.home
 
-class HomeViewModel {
+import com.paulo.teixeira.robint.base.BaseViewModel
+
+class HomeViewModel : BaseViewModel() {
 }
