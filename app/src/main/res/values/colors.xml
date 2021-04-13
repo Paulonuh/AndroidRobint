@@ -3,6 +3,9 @@
     <color name="primary">#17517e</color>
     <color name="primaryDark">#0b2b42</color>
 
+    <color name="white_translucent">#B3FFFFFF</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="transparent">#00ffffff</color>
 </resources>
