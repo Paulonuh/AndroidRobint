@@ -1,10 +1,12 @@
-package com.paulo.teixeira.robint
+package com.paulo.teixeira.robint.ui.main
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import dagger.hilt.android.AndroidEntryPoint
+import com.paulo.teixeira.robint.R
+import com.paulo.teixeira.robint.databinding.ActivityMainBinding
+import com.paulo.teixeira.robint.ui.home.SharedViewModel
 
-@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

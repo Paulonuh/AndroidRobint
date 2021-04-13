@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:fitsSystemWindows="true"
+    android:focusable="true">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_back_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_large_extra"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_arrow"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_logout"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_logout"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/iv_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_back_button" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large_extra"
+        android:fontFamily="@font/din"
+        android:text="@string/hello_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_super"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/iv_back_button"
+        app:layout_constraintTop_toBottomOf="@id/iv_back_button" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_profile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/din"
+        android:paddingBottom="@dimen/margin_default"
+        android:text="@string/my_profile"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_big"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/v_profile_divider"
+        app:layout_constraintEnd_toEndOf="@id/iv_logout"
+        app:layout_constraintStart_toStartOf="@id/tv_welcome" />
+
+    <View
+        android:id="@+id/v_profile_divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/tv_profile"
+        app:layout_constraintStart_toStartOf="@id/tv_profile"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

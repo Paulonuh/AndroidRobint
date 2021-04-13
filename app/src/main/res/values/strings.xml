@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Robint</string>
+    <string name="forum">Forum</string>
+    <string name="robint">Robint</string>
+    <string name="hello_title">Welcome, Paulo Henrique</string>
+    <string name="my_profile">My Profile</string>
+    <string name="clear" />
+    <string name="failed_server">Falha no servidor</string>
+    <string name="no_internet_verify_signal">Sem conexão com a internet, verifique o sinal.</string>
+    <string name="no_server_response">Sem resposta do servidor.</string>
+    <string name="there_was_fail_try_again">Houve uma falha, tente novamente</string>
+    <string name="no_data">Sem informação</string>
+
+    <string name="ghost_app_bar_layout_transition_name">ghost_app_bar_layout_transition_name</string>
 </resources>
