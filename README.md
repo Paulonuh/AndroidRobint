@@ -13,6 +13,3 @@ This app was built using:
 - Coroutines
 - Retrofit
 - Navigation
-
-The next steps are the implementation of: 
-- test
